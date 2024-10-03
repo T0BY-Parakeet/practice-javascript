@@ -1,31 +1,22 @@
+function errorInput(){]
 
+    console.log(document.getElementById("month").value)
 
-function changeColor(){
+    console.log(document.getElementById("day").value)
 
-    document.querySelector("h1").style.color="red"
-}
+    const month = document.getElementById("month").value;
 
-document.querySelector("text").style.color="red"
+    const day =document.getElementById("day").value
 
-//document.getElementById("text").style.color="red";
-
-/* これは、ドキュメントの中の「text」というIDを持っている
-　 タグのスタイルの色を赤にしてください*/
-
-let count = 0;
-
-function increaseCount(){
-
-    count++;
-
-    document.getElementById("counter").innerText = count;
+    console.log("month",month,"day",day)
 
 }
 
-function herasuCount(){
+/* javascriptのプログラムとHTMLファイルは、どこで対応しているか
+タグについているIDで紐づく
+タグの中にあっる付加情報のことを属性
 
-    count--;
 
-    document.getElementById("counter").innerText = count;
+*/
 
-    }
+
