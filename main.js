@@ -81,7 +81,7 @@ function starNumberGuessGame(){
             message.textContent = "正解"
 
         }else if(randomNumber < val){
-            message.textContent = "大きい"-
+            message.textContent = "大きい"
 
         }if(randomNumber > val){
             message.textContent = "小さい"
@@ -89,7 +89,14 @@ function starNumberGuessGame(){
 
     })
 
-    gameContainer.appendChild(button);
+    gameContainer.appendChild(button)
+
+    let count = 0 ;
+
+    let countDisplay = document.createElement("p");
+    countDisplay.textContent = `試行回数: ${count}`;
+
+    gameContainer.appendChild(countDisplay);
 
 }
 
