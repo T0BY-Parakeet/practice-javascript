@@ -1,3 +1,19 @@
+const gameSelector = document.getElementById('game-select');
+const gameContainer = document.getElementById("game-container");
+gameSelector.addEventListener('change',function(){
+    gameContainer.innerHTML = '';
+    switch(gameSelector.value){
+
+        case 'number-guess':
+            starNumberGuessGame();
+            break;
+
+        case 'clicker':
+            clickCounterGame();
+            break;
+    }
+})
+
 function  clickCounterGame(){
 
     let count = 0;
@@ -48,7 +64,6 @@ function  clickCounterGame(){
 
 }
 
-clickCounterGame();
 
 
 
@@ -100,5 +115,4 @@ function starNumberGuessGame(){
 
 }
 
-starNumberGuessGame();
 
