@@ -1,0 +1,58 @@
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --accent:#5b8cff;
+  --muted:#6b7280;
+  --radius:14px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:linear-gradient(180deg,var(--bg),#eef2ff);
+  color:#111827;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+
+.container{width:100%;max-width:760px}
+
+header{margin-bottom:18px;text-align:center}
+h1{margin:0 0 6px;font-size:28px}
+.lead{margin:0;color:var(--muted)}
+
+.card{
+  background:var(--card);
+  padding:20px;
+  border-radius:var(--radius);
+  box-shadow:0 6px 20px rgba(16,24,40,0.06);
+}
+
+#question-area{min-height:120px}
+.q-index{color:var(--muted);font-size:13px;margin-bottom:8px}
+.q-text{font-size:18px;margin-bottom:14px}
+.options{display:grid;gap:10px}
+.option-btn{
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid #e6e9f2;
+  background:#fff;
+  cursor:pointer;
+  text-align:left;
+}
+.option-btn.active{background:linear-gradient(90deg,var(--accent),#7bb1ff);color:white;border:1px solid rgba(0,0,0,0.06)}
+.buttons{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}
+.buttons button{padding:10px 14px;border-radius:10px;border:0;background:var(--accent);color:#fff;cursor:pointer}
+.buttons button#btn-prev{background:#eef2ff;color:var(--accent);border:1px solid #dfeaff}
+
+.hidden{display:none}
+
+#result h2{font-size:26px;margin:0}
+.result-actions{margin-top:16px;display:flex;gap:10px}
+#btn-restart{padding:10px 14px;border-radius:10px;border:0;background:#111827;color:#fff;cursor:pointer}
+#share-link{padding:10px 14px;border-radius:10px;border:1px solid #e6e9f2;text-decoration:none;color:var(--accent);display:inline-flex;align-items:center}
+footer{text-align:center;margin-top:14px;color:var(--muted);font-size:13px}
